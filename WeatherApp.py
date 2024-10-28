@@ -74,7 +74,7 @@ class WeatherApp(QWidget):
         self.city_input.returnPressed.connect(self.get_weather)     # Enter key press
 
     def get_weather(self):
-        api_key = "2efb5bda22c82aa1b98287335707e43e"
+        api_key = "USE UR API HERE"
         city = self.city_input.text()
         url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=imperial"  # Changed to imperial for Fahrenheit
 
